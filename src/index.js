@@ -1,17 +1,9 @@
-import React from 'react';
+import React from 'react'; // 컴포넌트를 사용해서 HTML처럼 작성하기위해 필요하다. 이를 jsx라고 부른다.
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './App'; // 아래에 alias 개념으로 <App /> 으로 해당내용을 선언했다.
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    <App />, document.getElementById('movie') 
+); //<App /> 을 root 라는 ID를 사용하는 태그 안에 넣어서 그려준다. - 이것을 컴포넌트라고 부른다.
+   // 컴포넌트(Component)는 HTML 을 반환하는 함수이다.
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
